@@ -1,0 +1,60 @@
+:root {
+	---neutral-black: #000;
+	---neutral-gray-1: #4b4b4b;
+	---neutral-gray-2: #959595;
+	---neutral-gray-3: #d5d5d5;
+	---neutral-gray-4: #f5f5f5;
+	---neutral-white: #fff;
+	---car-repair-cta: #c40b0b;
+	---car-repair-primary: #c40b0b;
+	---car-repair-secondary: #02133c;
+	---car-repair-accent-red: #e30b0b;
+	---dogs-primary: #5d62b5;
+	---dogs-secondary-1: #29c3be;
+	---dogs-secondary-2: #f2726f;
+	---dogs-secondary-3: #ffc533;
+	---dogs-secondary-4: #62b58f;
+}
+:root {
+  --font-family: "Roboto", sans-serif;
+}
+
+  .top-section {
+    // background-image: ;
+      .header__container {
+        .header {
+        &__logo {
+        }
+        &__service {
+          &__text {
+          }
+          &__title {
+          }
+          &__time {
+          }
+        }
+        &__call__us {
+          &__text {
+          }
+          &__title {
+          }
+          &__number {
+            a {
+              &:hover {}
+              &:active {}
+              &:focus {}
+            }
+          }
+        }
+        &__button {
+          &__text {
+            &:hover {}
+            &:active {}
+            &:focus {}
+          }
+        }
+        img {
+        }
+      }
+    }
+  }
