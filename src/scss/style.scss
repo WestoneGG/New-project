@@ -19,42 +19,61 @@
   --font-family: "Roboto", sans-serif;
 }
 
-  .top-section {
-    // background-image: ;
-      .header__container {
-        .header {
+.top-section {
+  background: url('../img/background.jpg') no-repeat center center;
+  background-size: cover;
+    .header__container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 26px;
+    }
+    .header {
         &__logo {
         }
-        &__service {
-          &__text {
+        &__menu{display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+          &__service {
+            display: flex;
+            max-width: 206px;
+            &__text {
+              display: flex;
+              flex-direction: column;
+              max-width: 206px;
+              &__title {
+              }
+              &__time {
+              }
+            }
           }
-          &__title {
+          &__call__us {
+            display: flex;
+            &__text {
+              display: flex;
+              flex-direction: column;
+              &__title {
+              }
+              &__number {
+                a {
+                  &:hover {}
+                  &:active {}
+                  &:focus {}
+                }
+              }
+            }
           }
-          &__time {
-          }
-        }
-        &__call__us {
-          &__text {
-          }
-          &__title {
-          }
-          &__number {
-            a {
+          &__button {
+            &__text {
               &:hover {}
               &:active {}
               &:focus {}
             }
           }
-        }
-        &__button {
-          &__text {
-            &:hover {}
-            &:active {}
-            &:focus {}
+          img {
           }
-        }
-        img {
-        }
-      }
+        } 
     }
   }
