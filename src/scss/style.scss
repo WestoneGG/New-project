@@ -23,19 +23,24 @@
   background: url('../img/background.jpg') no-repeat center center;
   background-size: cover;
     .header__container {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
-      margin-top: 26px;
     }
     .header {
+      display: flex;
+      flex-direction: column;
+      &__about {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 26px;
         &__logo {
         }
-        &__menu{display: flex;
+        &__aside{
+          display: flex;
           flex-direction: row;
           justify-content: space-between;
           align-items: center;
+          gap: 30px;
           &__service {
             display: flex;
             max-width: 206px;
@@ -43,7 +48,14 @@
               display: flex;
               flex-direction: column;
               max-width: 206px;
+              font-family: var(--font-family);
+              font-weight: 700;
+              font-size: 12px;
+              line-height: 183%;
+              letter-spacing: 0.01em;
+              color: var(---neutral-white);
               &__title {
+                text-transform: uppercase;
               }
               &__time {
               }
@@ -52,12 +64,24 @@
           &__call__us {
             display: flex;
             &__text {
-              display: flex;
+              display: flex; 
               flex-direction: column;
+              font-family: var(--font-family);
+              font-weight: 600;
+              font-size: 12px;
+              line-height: 183%;
+              letter-spacing: 0.01em;
+              color: var(---neutral-white);
               &__title {
+              text-transform: uppercase;
               }
               &__number {
                 a {
+                  color: var(---neutral-white);
+                  text-decoration: none;
+                  &:visited {
+                    color: inherit;
+                  }
                   &:hover {}
                   &:active {}
                   &:focus {}
@@ -67,13 +91,130 @@
           }
           &__button {
             &__text {
+              position: relative;
+              box-sizing: border-box;
+              background: var(---car-repair-cta);
+              font-family: var(--font-family);
+              font-weight: 700;
+              font-size: 12px;
+              line-height: 200%;
+              letter-spacing: 0.01em;
+              text-transform: uppercase;
+              color: var(---neutral-white);
+              padding: 10px 30px;
+              margin-right: 10px;
               &:hover {}
               &:active {}
               &:focus {}
             }
+            &::after {
+              content: url('../img/buttonarrow.svg');
+              box-sizing: content-box;
+              background: url('../img/backgroundarrow.svg') no-repeat center center;
+              background-size: cover;
+              padding: 14px 18px;
+              position: absolute;
+              margin-left: -33px;
+            }
           }
           img {
           }
-        } 
+        }
+      } 
     }
   }
+  
+  .header__menu {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: var(---neutral-white);
+    padding: 0 20px;
+    &__nav {
+      display: flex;
+      align-items: center;
+      min-height: 60px;
+      &__list {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        gap: 30px;
+        &__item {
+          font-family: var(--font-family);
+          font-weight: 700;
+          font-size: 14px;
+          line-height: 157%;
+          letter-spacing: 0.01em;
+          text-align: center;
+          color: var(---car-repair-secondary);
+        }
+        a {
+          &:hover {}
+          &:active {}
+          &:focus {}
+          &:visited {
+            color: inherit;
+          }
+        }
+      }
+    }
+    &__side {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      gap: 20px;
+      .header_menu__side__search {
+        img {
+        }
+      }
+      .header__menu__shopping__cart {
+        img {
+        }
+      }
+    }
+  }
+
+.header__content {
+  margin-top: 126px;
+  &__text {
+    max-width: 650px;
+    font-family: var(--font-family);
+    font-weight: 900;
+    font-size: 56px;
+    line-height: 100%;
+    color: var(---neutral-white);
+  }
+  &__button {
+    margin-top: 48px;
+    margin-bottom: 312px;
+    &__text {
+      position: relative;
+      box-sizing: border-box;
+      background: var(---car-repair-cta);
+      font-family: var(--font-family);
+      font-weight: 700;
+      font-size: 12px;
+      line-height: 200%;
+      letter-spacing: 0.01em;
+      text-transform: uppercase;
+      color: var(---neutral-white);
+      padding: 10px 30px;
+      margin-right: 10px;
+      &:hover {}
+      &:active {}
+      &:focus {}
+    }
+    &::after {
+      content: url('../img/buttonarrow.svg');
+      box-sizing: content-box;
+      background: url('../img/backgroundarrow.svg') no-repeat center center;
+      background-size: cover;
+      padding: 14px 18px;
+      position: absolute;
+      margin-left: -33px;
+    }
+  }
+}
